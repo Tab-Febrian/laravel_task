@@ -17,6 +17,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\GuardianController;
 use App\Http\Controllers\ClassroomController;
+use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\SubjectController;
 
 // Rute untuk Halaman Utama
 // Route::get('/home', function () {
@@ -42,3 +44,7 @@ Route::get('/student', [StudentController::class, 'index'])->name('student');
 Route::get('/guardian', [GuardianController::class, 'guardian'])->name('guardian');
 
 Route::get('/classroom', [ClassroomController::class, 'classroom'])->name('classroom');
+
+Route::get('/teacher', [TeacherController::class, 'teacher'])->name('teacher');
+
+Route::get('/subject', [SubjectController::class, 'subject'])->name('subject');
