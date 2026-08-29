@@ -50,7 +50,7 @@ class StudentController extends Controller
 //         'email' => 'faisal.rahman@smk.sch.id'
 //     ],
 // ];
-    $student = Students::all();
+    $student = Students::with('classroom')->get();
     return view('student', [
             'title' => 'Student',
             'student' => $student

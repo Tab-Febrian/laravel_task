@@ -20,6 +20,15 @@ class SubjectController extends Controller
         ]);
     }
 
+    public function adminIndex()
+    {
+        $subject = Subjects::all();
+        return view('components.admin.subject', [ 
+            'title' => 'Subject (Admin)',
+            'subject' => $subject
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      */

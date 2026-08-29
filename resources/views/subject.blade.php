@@ -19,8 +19,8 @@
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ $data['name'] }}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $data['description'] }}</td>
                     <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                        @foreach ($data->teachers as $teacher)
-                            <div class="mb-1">{{ $teacher->name }}</div>
+                        @foreach ($data->teacher as $teach)
+                            <div class="mb-1">{{ $teach->name }}</div>
                         @endforeach
                     </td>
                 @endforeach

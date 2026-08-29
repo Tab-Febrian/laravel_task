@@ -17,6 +17,15 @@ class ClassroomController extends Controller
         ]);
     }
 
+    public function adminIndex()
+    {
+        $classroom = Classroom::all();
+        return view('components.admin.classroom', [ 
+            'title' => 'Data Classroom (Admin)',
+            'classroom' => $classroom
+        ]);
+    }
+
     public function create()
     {
         //

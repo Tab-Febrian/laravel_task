@@ -26,4 +26,14 @@ class ProfileController extends Controller
         ]);
         // return view('profil');
     }
+
+    public function adminIndex()
+    {
+        return view('components.admin.profil', [
+            'title' => 'Profil Admin',
+            'nama' => 'Muhammad Febrian',
+            'kelas' => 'XI PPLG 1',
+            'sekolah' => 'SMK Raden Umar Said'
+        ]);
+    }
 }

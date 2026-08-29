@@ -13,4 +13,11 @@ class HomeController extends Controller
             'title' => 'Home'
         ]);
     }
+
+    public function adminDashboard()
+    {
+        return view('components.admin.dashboard', [
+            'title' => 'Dashboard Admin'
+        ]);
+    }
 }

@@ -20,12 +20,15 @@ class DatabaseSeeder extends Seeder
     {
         Classroom::factory(5)->hasStudents(5)->create();
         Guardians::factory(10)->create();
-        Subjects::factory(5)->hasTeachers(1)->create();
+        Subjects::factory(5)->hasTeacher(1)->create();
+        // Subjects::factory(5)->has(Teachers::factory(1))->create();
+
         // Students::factory(10)->create();
         
         User::factory()->create([
             'name' => 'Test User',
-            'email' => 'test@example.com',
+            'email' => 'febianfebian323@gmail.com',
+            'password' => bcrypt('LOQ2026'),
         ]);
     }
 }
